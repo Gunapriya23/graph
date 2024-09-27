@@ -1,0 +1,19 @@
+import java.util.*;
+class HelloWorld {
+    public static void Calnodedg(int[][]edges){
+        Set<Integer> node=new HashSet<>();
+        int numedg = edges.length;
+        for(int[]edge:edges){
+            node.add(edge[0]);
+            node.add(edge[1]);
+        }
+        int numnod=node.size();
+        System.out.println("Number of node: "+numnod);
+        System.out.println("Number of edges: "+numedg);
+        
+    }
+    public static void main(String[] args) {
+        int[][]edges={{1,2},{2,3},{2,4},{2,5},{2,6}};
+        Calnodedg(edges);
+    }
+}
